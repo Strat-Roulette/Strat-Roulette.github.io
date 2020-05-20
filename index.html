@@ -47,6 +47,7 @@
         <input type="radio" value="train" name="map"><label> Train</label><br>
         <input type="radio" value="nuke" name="map"><label> Nuke</label><br>
         <input type="radio" value="dust2" name="map"><label> Dust 2</label><br>
+        <input type="radio" value="null" name="map"><label> None of the Above</label><br>
         <br>
         <button type="button" onclick="strat('ct')">CT Strat</button>
         <button type="button" onclick="strat('t')">T Strat</button>
@@ -71,7 +72,14 @@
                         { 
                             if (ele[i].checked) 
                             {
-                                keys = parsedData[ele[i].value][team];
+                                if (ele[i].value == "null")
+                                {
+                                    keys = parsedData[team];
+                                }
+                                else
+                                {
+                                    keys = parsedData[ele[i].value][team];
+                                }
                                 break;
                             }
                         } 
