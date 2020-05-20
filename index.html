@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <style>
+    .header {
+        position: fixed;
+        text-align: center;
+        top: 24px;
+        left: 25%;
+        right: 25%;
+        width: auto;
+    }
+    .footer {
+        position: fixed;
+        text-align: center;
+        bottom: 12px;
+        width: 100%;
+    }
+    button {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 42px;
+    }
+    p {
+        font-size: 20px;
+    }
+    </style>
+	<title> CSGO Strat Roulette</title>
+</head>
+<body>
+
+    <div class="header">
+        <h4 id="title"> Title</h4>
+        <p id="desc">Description here</p>
+    </div>
+
+    <div class="footer">
+        <input type="radio" value="mirage" name="map" checked><label> Mirage</label><br>
+        <input type="radio" value="cache" name="map"><label> Cache</label><br>
+        <input type="radio" value="inferno" name="map"><label> Inferno</label><br>
+        <input type="radio" value="overpass" name="map"><label> Overpass</label><br>
+        <input type="radio" value="train" name="map"><label> Train</label><br>
+        <input type="radio" value="nuke" name="map"><label> Nuke</label><br>
+        <input type="radio" value="dust2" name="map"><label> Dust 2</label><br>
+        <br>
+        <button type="button" onclick="strat('ct')">CT Strat</button>
+        <button type="button" onclick="strat('t')">T Strat</button>
+    </div>
+
+    <script type="text/javascript" src="strats.json"></script>
+	<script>
+        function strat(team)
+        {
+            let keys;
+            let key = null;
+
+            while (recentKeys.includes(key) || key == null)
+            {
+                if (Math.random() < 0.3)
+                {
+                    if (Math.random() < 0.4)
+                    {
+                        var ele = document.getElementsByName('map'); 
+                
+                        for (i = 0; i < ele.length; i++) 
+                        { 
+                            if (ele[i].checked) 
+                            {
+                                keys = parsedData[ele[i].value][team];
+                                break;
+                            }
+                        } 
+                    }
+                    else
+                    {
+                        keys = parsedData[team];
+                    }
+                }
+                else
+                {
+                    keys = parsedData["reg"];
+                }
+
+                key = keys[Math.floor(Math.random() * keys.length)];
+            }
+            recentKeys.push(key);
+            if (recentKeys.length > 15)
+            {
+                recentKeys.shift();
+            }
+            
+            document.getElementById("title").innerHTML = key["name"];
+            document.getElementById("desc").innerHTML = replaceRandom(key["desc"], team);
+        }
+
+        function replaceRandom(desc, team)
+        {
+            let pistols;
+            let shotguns;
+            let lmgs = ["Negev", "M249"];
+            let smgs;
+            let rifles;
+            let site = ["A", "B"];
+            let direction = ["right", "left"];
+            let special;
+            if (team == "ct")
+            {
+                pistols = ["USP-S", "Desert Eagle", "Duel Berettas", "Five-SeveN", "P250"];
+                shotguns = ["Nova", "XM-1014", "MAG-7"];
+                smgs = ["MP9", "MP7", "P90", "PP-Bizon", "UMP-45"];
+                rifles = ["FAMAS", "M4A4", "Scout", "AWP", "SCAR-20"];
+                special = "One person";
+            }
+            else
+            {
+                pistols = ["Glock-18", "Desert Eagle", "Duel Berettas", "Tec-9", "P250"];
+                shotguns = ["Nova", "XM-1014", "Sawed Off"];
+                smgs = ["MAC-10", "MP7", "P90", "PP-Bizon", "UMP-45"];
+                rifles = ["Galil AR", "AK-47", "Scout", "AWP", "G3SG1"];
+                special = "The bomb carrier";
+            }
+
+            // This sucks, but effort is hard
+            desc = desc.replace("@PISTOL", pistols[Math.floor(Math.random() * pistols.length)]);
+            desc = desc.replace("@SHOTGUN", shotguns[Math.floor(Math.random() * shotguns.length)]);
+            desc = desc.replace("@LMG", lmgs[Math.floor(Math.random() * lmgs.length)]);
+            desc = desc.replace("@SMG", smgs[Math.floor(Math.random() * smgs.length)]);
+            desc = desc.replace("@RIFLE", rifles[Math.floor(Math.random() * rifles.length)]);
+            desc = desc.replace("@SITE", site[Math.floor(Math.random() * site.length)]);
+            desc = desc.replace("@SITE", site[Math.floor(Math.random() * site.length)]);
+            desc = desc.replace("@DIR", direction[Math.floor(Math.random() * direction.length)]);
+            desc = desc.replace("@SPECIAL", special);
+
+            return desc;
+        }
+    </script>
+
+</body>
+</html>
