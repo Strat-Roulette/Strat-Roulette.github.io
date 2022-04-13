@@ -45,7 +45,7 @@ data = `{
         },
         { 
             "name": "CRABS",
-            "desc": "Only crouch walking and Duel Berrettas."
+            "desc": "Only crouch walking and Dual Berettas."
         },
         { 
             "name": "Artillery",
@@ -97,7 +97,7 @@ data = `{
         },
         { 
             "name": "MR. PRESIDENT",
-            "desc": "@SPECIAL is the president, they must get rid of all their weapons. The rest of the team has to protect them at all costs while yelling secret service quotes ('GET DOWN MR.PRESIDENT', 'BREACH BREACH BREACH', etc.)."
+            "desc": "@SPECIAL is the president; they must get rid of all their weapons. The rest of the team has to protect them at all costs while yelling secret service quotes ('GET DOWN MR. PRESIDENT', 'BREACH BREACH BREACH', etc.)."
         },
         { 
             "name": "Autobuy",
@@ -133,7 +133,7 @@ data = `{
         },
         { 
             "name": "So no head?",
-            "desc": "If you get a headshot you cannot do anything until the round ends, aim for the body!"
+            "desc": "If you get a headshot, you cannot do anything until the round ends, aim for the body!"
         },
         { 
             "name": "Pistol -> Primary",
@@ -153,11 +153,11 @@ data = `{
         },
         { 
             "name": "NEGEV NEGEV NEGEV",
-            "desc": "Buy a Negev and a decoy grenade and ruin your enemies ears."
+            "desc": "Buy a Negev and a decoy grenade and ruin your enemies’ ears."
         },
         { 
             "name": "Dog Tags",
-            "desc": "When you kill an enemy you must drop everything and type the enemys name into chat."
+            "desc": "When you kill an enemy you must drop everything and type the enemy’s name into chat."
         },
         { 
             "name": "Gun Flex",
@@ -273,7 +273,7 @@ data = `{
         },
         {
             "name": "PUULLLLLLLL",
-            "desc": "Buy a Shotgun or a Sniper and everytime you fire you have to yell 'PUUULLLLLL!' as if you were on a shooting range."
+            "desc": "Buy a Shotgun or a Sniper and every time you fire you have to yell 'PUUULLLLLL!' as if you were on a shooting range."
         },
         {
             "name": "Bad Habits",
@@ -281,7 +281,7 @@ data = `{
         },
         {
             "name": "Resolute",
-            "desc": "Turn down your resolution to the lowest it will go (take a timeout if nessessary)."
+            "desc": "Turn down your resolution to the lowest it will go (take a timeout if necessary)."
         },
         {
             "name": "Discharge",
@@ -296,7 +296,7 @@ data = `{
             "desc": "Nobody can be in the same room as another person."
         },
         {
-            "name": "Habenero Taco Mexicano",
+            "name": "Habanero Taco Mexicano",
             "desc": "Refer to everything as 'amigo' and speak in an awful Spanish/Mexican accent."
         },
         {
@@ -313,11 +313,11 @@ data = `{
         },
         {
             "name": "Stockpile",
-            "desc": "If you kill an enemy you must take their gun back to spawn and place it in a pile."
+            "desc": "If you kill an enemy, you must take their gun back to spawn and place it in a pile."
         },
         {
             "name": "The Decider",
-            "desc": "@SPECIAL must pick which team mates get each of these weapons, each weapon can only be used by 1 person. @RIFLE, @SMG, @LMG, @SHOTGUN, @PISTOL."
+            "desc": "@SPECIAL must pick which teammates get each of these weapons, each weapon can only be used by 1 person. @RIFLE, @SMG, @LMG, @SHOTGUN, @PISTOL."
         },
         {
             "name": "The Decision",
@@ -349,7 +349,7 @@ data = `{
         },
         {
             "name": "Nascar",
-            "desc": "Everytime you are running you have to make car noises."
+            "desc": "Every time you are running you have to make car noises."
         }
     ],
 
@@ -360,7 +360,7 @@ data = `{
         },
         {
             "name": "CT Crickets",
-            "desc": "Buy a FAMAS and whenever you arn't shooting, hold down the 'scope button'."
+            "desc": "Buy a FAMAS and whenever you aren’t shooting, hold down the 'scope button'."
         },
         {
             "name": "SpecOps",
@@ -376,7 +376,7 @@ data = `{
         },
         {
             "name": "Ninja Clan",
-            "desc": "Everyone tries to Ninja Defuse (defuse in smoke infront of the enemy team)."
+            "desc": "Everyone tries to Ninja Defuse (defuse in smoke in front of the enemy team)."
         },
         {
             "name": "Hide and Bide",
@@ -392,11 +392,11 @@ data = `{
         },
         {
             "name": "Turrets",
-            "desc": "Make a 2 man tower on each bomb site, the person on top has to use a @LMG or @RIFLE (your choice), the person on bottom has to use a @SMG."
+            "desc": "Make a 2-man tower on each bomb site, the person on top has to use a @LMG or @RIFLE (your choice), the person on bottom has to use a @SMG."
         },
         {
             "name": "No Losses",
-            "desc": "You cannot defuse the bomb, you better rotate quick."
+            "desc": "You cannot defuse the bomb; you better rotate quick."
         },
         {
             "name": "The Ultimate Trick",
@@ -412,15 +412,15 @@ data = `{
         },
         {
             "name": "Bottom Carry",
-            "desc": "The 4 bottom frags try their absolute best to win the round, the top frag trys to stop them without directly hurting them (ex. you can flash, body block, etc.)."
+            "desc": "The 4 bottom frags try their absolute best to win the round, the top frag tries to stop them without directly hurting them (ex. you can flash, body block, etc.)."
         },
         {
             "name": "An Even Carry",
-            "desc": "Every one with an even score on the scoreboard trys their absolute best to win the round, the others try to stop them without directly hurting them (ex. you can flash, body block, etc.)."
+            "desc": "Everyone with an even score on the scoreboard tries their absolute best to win the round, the others try to stop them without directly hurting them (ex. you can flash, body block, etc.)."
         },
         {
-            "name": "Harrassment",
-            "desc": "You must follow the plan layed out by your teams bottom frag, you also must insult the plan for its every possible failure."
+            "name": "Harassment",
+            "desc": "You must follow the plan laid out by your teams bottom frag, you also must insult the plan for its every possible failure."
         },
         {
             "name": "Bottom Hold",
@@ -499,7 +499,7 @@ data = `{
         },
         {
             "name": "Like Chickens to a...",
-            "desc": "Rush the tighest chokepoint on the map one by one."
+            "desc": "Rush the tightest chokepoint on the map one by one."
         },
         {
             "name": "Lie in Wait",
@@ -523,7 +523,7 @@ data = `{
         },
         {
             "name": "A Traitor",
-            "desc": "The bottom frag trys their absolute best to lose the round by flashing their team, body blocking, stealing the bomb, etc."
+            "desc": "The bottom frag tries their absolute best to lose the round by flashing their team, body blocking, stealing the bomb, etc."
         },
         {
             "name": "Underfunded Cave Dwellers",
@@ -574,11 +574,11 @@ data = `{
             },
             {
                 "name": "Cache CT: Operation Angels",
-                "desc": "Everyone sit perfectly silently heaven, when they start planting jump out at them."
+                "desc": "Everyone sit perfectly silent in heaven. When they start planting, jump out at them."
             },
             {
                 "name": "Cache CT: Sneaky Squeaky",
-                "desc": "Everyone stand on eachothers heads behind squeaky door, when the enemys turn the corner they should see 5 people on each others heads."
+                "desc": "Everyone stand on each other’s heads behind squeaky door. When the enemies turn the corner, they should see 5 people on each other’s heads."
             }
         ],
         "t": [
@@ -670,7 +670,7 @@ data = `{
                 "desc": "Have everyone hide behind the oil tanker until bomb is planted."
             },
             {
-                "name": "Train CT: Aggresive Government",
+                "name": "Train CT: Aggressive Government",
                 "desc": "Everyone buy a @SHOTGUN and decoy grenades and rush up B ramp. Then down ladder if they go A."
             }
         ],
@@ -733,7 +733,7 @@ data = `{
             },
             {
                 "name": "Dust 2 CT: Home of the Silvers",
-                "desc": "The person with the lowest competitive rank has to buy guns for the entire team, and craft the strategy."
+                "desc": "The person with the lowest competitive rank has to buy guns for the entire team and craft the strategy."
             }
         ],
         "t": [
